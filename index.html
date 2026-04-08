@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniStock | El Sistema POS más potente para tu negocio</title>
+    <meta name="description" content="OmniStock: Gestión de inventario, ventas, fiados y reportes detallados. La solución definitiva para bodegas y comercios en Venezuela.">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CC (CDN for static demo) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#1e293b',
+                        accent: '#60a5fa',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .hero-gradient { background: radial-gradient(circle at top right, #1e293b, #0f172a); }
+        .text-gradient { background: linear-gradient(to right, #60a5fa, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-blur { backdrop-filter: blur(8px); background: rgba(15, 23, 42, 0.8); }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-blur border-b border-slate-800/30 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="img/logo.svg" alt="OmniStock Logo" class="w-8 h-8">
+                <span class="text-xl font-black text-white tracking-tight italic">OmniStock</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-slate-300">
+                <a href="#features" class="hover:text-primary transition-colors">Funciones</a>
+                <a href="#inventory" class="hover:text-primary transition-colors">Inventario</a>
+                <a href="#pos" class="hover:text-primary transition-colors">Punto de Venta</a>
+                <a href="#reports" class="hover:text-primary transition-colors">Reportes</a>
+            </div>
+            <a href="contacto.html" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2.5 rounded-full text-xs font-black uppercase tracking-widest shadow-lg shadow-blue-900/40 transition-all transform hover:scale-105">
+                Contactar
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-32 pb-20 relative overflow-hidden">
+        <!-- Abstract Shapes -->
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[100px] -mr-64 -mt-64"></div>
+        <div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-blue-400/5 rounded-full blur-[80px] -ml-32 -mb-32"></div>
+
+        <div class="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-black text-white leading-tight mb-6">
+                    Control Total <br><span class="text-gradient">Sin Complicaciones</span>
+                </h1>
+                <p class="text-slate-400 text-lg md:text-xl font-medium mb-10 max-w-xl">
+                    OmniStock es el sistema de gestión definitivo para negocios modernos. Inventario inteligente, ventas rápidas y cobit-reports en tiempo real.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="descargas.html" class="bg-white text-slate-900 px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-sm hover:bg-blue-50 transition-all shadow-xl">
+                        Descargar Gratis
+                    </a>
+                    <a href="#features" class="flex items-center gap-3 px-6 py-4 group">
+                        <div class="w-10 h-10 rounded-full border-2 border-slate-700 flex items-center justify-center group-hover:border-blue-500 transition-colors">
+                            <svg class="w-4 h-4 text-white group-hover:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+                        </div>
+                        <span class="text-white text-xs font-black uppercase tracking-widest">Ver Funciones</span>
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <!-- App Mockup from real screenshot -->
+                <div class="glass p-2 rounded-[1.5rem] shadow-2xl relative transform hover:rotate-1 transition-transform duration-500">
+                    <div class="bg-slate-800 rounded-[1.2rem] overflow-hidden border border-slate-700">
+                        <img src="img/mockup_final.png" alt="OmniStock Interface" class="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity">
+                    </div>
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -right-6 bg-blue-600 p-4 rounded-2xl shadow-xl shadow-blue-900/40 hidden md:block">
+                        <span class="text-white font-black text-xs uppercase tracking-widest italic">Versión 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="features" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-black text-blue-600 uppercase tracking-[0.3em] mb-3">Poderosamente Simple</h2>
+                <p class="text-4xl font-black text-slate-900 tracking-tight">Diseñado para la eficiencia diaria</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-10 bg-slate-50 rounded-[2.5rem] hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200 group">
+                    <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-black text-slate-900 mb-3 tracking-tight">Inventario Multi-Nivel</h3>
+                    <p class="text-slate-500 font-medium leading-relaxed">Gestiona productos por unidades, bultos y presentaciones personalizadas. Controla stock, vencimientos y ubicaciones físicas.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-10 bg-slate-50 rounded-[2.5rem] hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200 group">
+                    <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-black text-slate-900 mb-3 tracking-tight">Multi-Moneda Inteligente</h3>
+                    <p class="text-slate-500 font-medium leading-relaxed">Tasa BCV automatizada. Vende en VES, USD o COP con conversión instantánea y reportes de ganancia realizados.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-10 bg-slate-50 rounded-[2.5rem] hover:bg-blue-50 transition-all border border-transparent hover:border-blue-200 group">
+                    <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-200 group-hover:scale-110 transition-transform">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-black text-slate-900 mb-3 tracking-tight">Reportes de Ganancia Real</h3>
+                    <p class="text-slate-500 font-medium leading-relaxed">No solo veas lo que vendiste, mira lo que ganaste realmente. Análisis de COGS y utilidad neta en cada periodo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POS Section -->
+    <section id="pos" class="py-24 bg-slate-900 text-white overflow-hidden">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+            <div class="md:w-1/2 order-2 md:order-1">
+                <div class="relative">
+                    <div class="absolute -top-10 -left-10 w-40 h-40 bg-blue-600/20 rounded-full blur-3xl"></div>
+                    <div class="bg-slate-800 p-6 rounded-[2.5rem] border border-slate-700 shadow-3xl">
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center bg-slate-700/50 p-4 rounded-2xl">
+                                <span class="font-bold">Harina P.A.N (Bulto)</span>
+                                <span class="font-black text-blue-400">14.15 USD</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-slate-700/50 p-4 rounded-2xl">
+                                <span class="font-bold">Pasta Primor 1Kg</span>
+                                <span class="font-black text-blue-400">1.20 USD</span>
+                            </div>
+                            <div class="border-t border-slate-700 pt-4 flex justify-between items-end">
+                                <span class="text-xs uppercase font-black text-slate-400">Total a Pagar</span>
+                                <span class="text-3xl font-black text-white">15.35 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 order-1 md:order-2">
+                <h2 class="text-4xl font-black mb-6 leading-tight">Punto de Venta Ultra-Rápido</h2>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center gap-4">
+                        <div class="bg-blue-600/20 p-1.5 rounded-full"><svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                        <span class="font-bold text-slate-300">Compatible con lectores de código de barras</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div class="bg-blue-600/20 p-1.5 rounded-full"><svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                        <span class="font-bold text-slate-300">Control de seriales único por producto</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div class="bg-blue-600/20 p-1.5 rounded-full"><svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                        <span class="font-bold text-slate-300">Impresión térmica térmica de tickets y QR</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <div class="bg-blue-600/20 p-1.5 rounded-full"><svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></div>
+                        <span class="font-bold text-slate-300">Módulo de cobro móvil integrado</span>
+                    </li>
+                </ul>
+                <div class="flex gap-4">
+                    <div class="p-5 bg-slate-800 rounded-3xl border border-slate-700 text-center flex-1">
+                        <span class="block text-2xl font-black">Cierre Z</span>
+                        <span class="text-[10px] uppercase font-black text-slate-500">Automatizado</span>
+                    </div>
+                    <div class="p-5 bg-slate-800 rounded-3xl border border-slate-700 text-center flex-1">
+                        <span class="block text-2xl font-black">Fiados</span>
+                        <span class="text-[10px] uppercase font-black text-slate-500">Control de Deuda</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Stats (from Audit) -->
+    <section id="inventory" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <span class="text-4xl block mb-2 font-black text-blue-600">300+</span>
+                    <span class="text-xs uppercase font-black text-slate-400 tracking-widest">Funciones de Gestión</span>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <span class="text-4xl block mb-2 font-black text-blue-600">100%</span>
+                    <span class="text-xs uppercase font-black text-slate-400 tracking-widest">Control de Seriales</span>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <span class="text-4xl block mb-2 font-black text-blue-600">PDF</span>
+                    <span class="text-xs uppercase font-black text-slate-400 tracking-widest">Reportes Profesionales</span>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+                    <span class="text-4xl block mb-2 font-black text-blue-600">OFF</span>
+                    <span class="text-xs uppercase font-black text-slate-400 tracking-widest">Funciona sin Internet</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 pt-20 pb-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+                <div class="max-w-xs">
+                    <div class="flex items-center gap-2 mb-6">
+                        <img src="img/logo.svg" alt="OmniStock Logo" class="w-8 h-8">
+                        <span class="text-xl font-black text-white italic">OmniStock</span>
+                    </div>
+                    <p class="text-slate-500 font-medium leading-relaxed">Tecnología robusta diseñada por Código Creativo para el empresario venezolano.</p>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div>
+                        <h4 class="text-white font-black uppercase text-[10px] tracking-widest mb-6">Módulos</h4>
+                        <ul class="text-slate-400 text-sm font-bold space-y-4">
+                            <li><a href="index.html#features" class="hover:text-blue-400 font-bold">Inventario</a></li>
+                            <li><a href="index.html#pos" class="hover:text-blue-400 font-bold">Punto de Venta</a></li>
+                            <li><a href="index.html#reports" class="hover:text-blue-400 font-bold">Reportes</a></li>
+                            <li><a href="descargas.html" class="hover:text-blue-400 font-bold">Descargas</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-black uppercase text-[10px] tracking-widest mb-6">Empresa</h4>
+                        <ul class="text-slate-400 text-sm font-bold space-y-4">
+                            <li><a href="#" class="hover:text-blue-400">Nosotros</a></li>
+                            <li><a href="#" class="hover:text-blue-400">Licencias</a></li>
+                            <li><a href="#" class="hover:text-blue-400">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-span-2 lg:col-span-1">
+                        <h4 class="text-white font-black uppercase text-[10px] tracking-widest mb-6">Soporte</h4>
+                        <p class="text-slate-500 text-sm font-medium mb-4">Preguntas, ayuda o cotizaciones directas a nuestro WhatsApp.</p>
+                        <a href="contacto.html" class="text-blue-400 font-black text-sm hover:underline">Ir a WhatsApp &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
+                <p class="text-slate-600 text-[10px] font-black uppercase tracking-widest">&copy; 2026 OmniStock por Código Creativo. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-slate-600 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
+                    <a href="#" class="text-slate-600 hover:text-white transition-colors"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
