@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar OmniStock | Instalador para Windows</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'] },
+                    colors: { primary: '#3b82f6', dark: '#0f172a' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: #f8fafc; color: #1e293b; }
+        .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(0, 0, 0, 0.05); }
+        .step-number { background: #3b82f6; color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; flex-shrink: 0; }
+        .download-btn { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .download-btn:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.4); }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Header / Hero -->
+    <header class="hero-bg pt-24 pb-32 text-white overflow-hidden relative">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <a href="index.html" class="inline-flex items-center gap-2 mb-12 opacity-80 hover:opacity-100 transition-opacity">
+                <img src="img/logo.svg" alt="Logo" class="w-8 h-8">
+                <span class="text-xl font-black italic tracking-tighter">OmniStock</span>
+            </a>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6 leading-tight">Instalador de OmniStock <br>para Windows</h1>
+            <p class="text-slate-400 text-lg md:text-xl font-medium max-w-2xl mx-auto">
+                Un solo archivo, todas las versiones. Compatible con Windows 7, 8, 10 y 11. 
+                <span class="block mt-2 text-blue-400 font-bold">Instalación rápida y segura.</span>
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 -mt-20 relative z-20 pb-24">
+        <div class="grid lg:grid-cols-3 gap-8">
+            
+            <!-- Download Section -->
+            <div class="lg:col-span-2 space-y-8">
+                <div class="glass-card rounded-[2.5rem] p-10 shadow-2xl">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                        <div>
+                            <h2 class="text-3xl font-black mb-3">Instalador Universal</h2>
+                            <p class="text-slate-500 font-medium mb-6">Detección automática de arquitectura (32/64 bits). <br>Soporta múltiples versiones de Windows.</p>
+                            <div class="flex flex-wrap gap-3 mb-8">
+                                <span class="bg-slate-100 px-3 py-1.5 rounded-lg text-xs font-black uppercase tracking-widest text-slate-500 border border-slate-200">Win 7 SP1</span>
+                                <span class="bg-slate-100 px-3 py-1.5 rounded-lg text-xs font-black uppercase tracking-widest text-slate-500 border border-slate-200">Win 8.1</span>
+                                <span class="bg-slate-100 px-3 py-1.5 rounded-lg text-xs font-black uppercase tracking-widest text-slate-500 border border-slate-200">Win 10/11</span>
+                            </div>
+                        </div>
+                        <div class="text-center md:text-right">
+                            <a href="#" class="download-btn inline-block bg-blue-600 text-white px-10 py-5 rounded-[2rem] font-black uppercase tracking-widest text-sm shadow-xl shadow-blue-500/20">
+                                Descargar Ahora (.zip)
+                            </a>
+                            <span class="block mt-4 text-xs font-black text-slate-400 uppercase tracking-widest italic">Versión 1.10.0 - Estable</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Notes -->
+                <div class="glass-card rounded-[2.5rem] p-10 shadow-lg border-l-8 border-l-blue-600">
+                    <div class="flex items-start gap-6">
+                        <div class="bg-blue-100 p-4 rounded-3xl">
+                            <svg class="w-10 h-10 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-black mb-4">Nota Importante: Redes</h3>
+                            <p class="text-slate-600 font-medium leading-relaxed">
+                                Al ejecutar el sistema por primera vez, Windows pedirá permiso de redes a través del Firewall. 
+                                <strong class="text-slate-900 block mt-2">DEBE MARCAR AMBAS CASILLAS (Públicas y Privadas)</strong> 
+                                y presionar en <span class="underline">"Permitir acceso"</span>.
+                            </p>
+                            <div class="mt-4 p-4 bg-yellow-50 rounded-2xl border border-yellow-100 flex items-center gap-3">
+                                <svg class="w-5 h-5 text-yellow-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                                <p class="text-xs font-bold text-yellow-800">Esto es obligatorio para permitir la conexión de celulares u otros equipos (Acceso Móvil).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Steps & Requirements Sidebar -->
+            <div class="space-y-8">
+                <!-- Steps -->
+                <div class="glass-card rounded-[2.5rem] p-10 shadow-lg">
+                    <h3 class="text-xl font-black mb-6 uppercase tracking-widest text-slate-400 text-sm">Primeros Pasos</h3>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <span class="step-number">1</span>
+                            <p class="text-sm font-semibold text-slate-600">Descomprime el archivo <span class="text-blue-600">.zip</span></p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="step-number">2</span>
+                            <p class="text-sm font-semibold text-slate-600">Ejecuta <span class="font-black text-slate-900">Instalar.exe</span></p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="step-number">3</span>
+                            <p class="text-sm font-semibold text-slate-600">Sigue los pasos del asistente</p>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="step-number">4</span>
+                            <p class="text-sm font-semibold text-slate-600">Abre <span class="italic text-blue-600">OmniStock</span> desde el escritorio</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Requirements -->
+                <div class="bg-slate-900 text-white rounded-[2.5rem] p-10 shadow-lg relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-20 h-20 bg-blue-600/20 rounded-full blur-2xl"></div>
+                    <h3 class="text-xl font-black mb-6 uppercase tracking-widest text-slate-500 text-xs">Requisitos Mínimos</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b border-slate-800 pb-2">
+                            <span class="text-xs font-bold text-slate-400">RAM</span>
+                            <span class="text-xs font-black">2 GB</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-800 pb-2">
+                            <span class="text-xs font-bold text-slate-400">Disco</span>
+                            <span class="text-xs font-black">300 MB libres</span>
+                        </div>
+                        <div class="flex justify-between border-b border-slate-800 pb-2">
+                            <span class="text-xs font-bold text-slate-400">Software</span>
+                            <span class="text-xs font-black">.NET Framework 4.5</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-xs font-bold text-slate-400">Internet</span>
+                            <span class="text-xs font-black text-green-400">No Requiere</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-100 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center gap-8 mb-8 text-xs font-black uppercase tracking-widest text-slate-400">
+                <a href="index.html" class="hover:text-blue-600 transition-colors">Inicio</a>
+                <a href="contacto.html" class="hover:text-blue-600 transition-colors">Soporte</a>
+                <a href="contacto.html" class="hover:text-blue-600 transition-colors">WhatsApp</a>
+            </div>
+            <p class="text-[10px] text-slate-400 font-black uppercase tracking-[0.4em]">&copy; 2026 OmniStock &bull; Código Creativo</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | OmniStock - Asesoría y Soporte</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Outfit', 'sans-serif'] },
+                    colors: { primary: '#3b82f6', dark: '#0f172a' }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background: radial-gradient(circle at center, #1e293b, #0f172a); min-height: 100vh; }
+        .contact-card { backdrop-filter: blur(16px); background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .wa-btn { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .wa-btn:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 20px 40px -10px rgba(59, 130, 246, 0.3); }
+    </style>
+</head>
+<body class="flex items-center justify-center p-6 text-white">
+    <div class="w-full max-w-xl">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <a href="index.html" class="inline-flex items-center gap-2 mb-8 group">
+                <img src="img/logo.svg" alt="Logo" class="w-10 h-10 group-hover:rotate-12 transition-transform">
+                <span class="text-2xl font-black italic tracking-tighter">OmniStock</span>
+            </a>
+            <h1 class="text-4xl font-black tracking-tight mb-3">Canales de Atención</h1>
+            <p class="text-slate-400 font-medium tracking-wide italic">Estamos listos para impulsarte</p>
+        </div>
+
+        <!-- Contact List -->
+        <div class="space-y-4">
+            <!-- Luisa Bustamante -->
+            <a href="https://wa.me/584167713802" target="_blank" 
+               class="wa-btn block contact-card rounded-3xl p-6 group hover:bg-blue-600/10 hover:border-blue-500/30">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-5">
+                        <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-900/40">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase font-black tracking-[0.2em] text-blue-400 mb-1 block">Ventas</span>
+                            <h2 class="text-xl font-bold tracking-tight">Luisa Bustamante</h2>
+                            <p class="text-slate-500 text-sm font-semibold tracking-wide">Asesora Comercial</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Cecilia Silva -->
+            <a href="https://wa.me/584247152715" target="_blank" 
+               class="wa-btn block contact-card rounded-3xl p-6 group hover:bg-blue-600/10 hover:border-blue-500/30">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-5">
+                        <div class="w-14 h-14 bg-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-900/40">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase font-black tracking-[0.2em] text-blue-400 mb-1 block">Ventas</span>
+                            <h2 class="text-xl font-bold tracking-tight">Cecilia Silva</h2>
+                            <p class="text-slate-500 text-sm font-semibold tracking-wide">Asesora Comercial</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Jeisson Cala -->
+            <a href="https://wa.me/584147550202" target="_blank" 
+               class="wa-btn block contact-card rounded-3xl p-6 group hover:bg-blue-600/10 hover:border-blue-500/30">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-5">
+                        <div class="w-14 h-14 bg-slate-100 rounded-2xl flex items-center justify-center shadow-lg shadow-black/20">
+                            <svg class="w-7 h-7 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="text-[10px] uppercase font-black tracking-[0.2em] text-slate-400 mb-1 block">TI & Desarollo</span>
+                            <h2 class="text-xl font-bold tracking-tight">Jeisson Cala</h2>
+                            <p class="text-slate-500 text-sm font-semibold tracking-wide">Soporte Técnico</p>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-3 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-20 text-center opacity-40">
+            <p class="text-[10px] font-black uppercase tracking-[0.4em]">OmniStock Ecosystem &copy; 2026</p>
+        </div>
+    </div>
+</body>
+</html>
